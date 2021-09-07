@@ -78,7 +78,7 @@
 											<ul>
 												<li class="position-static d-none d-lg-block">
 													<a href="#">Home</a>
-													<div class="mega-menu-container">
+													<div class="mega-menu-container d-none">
 														<div class="row">
 															<div class="col-lg-3">
 																<div class="mega-menu-box">
@@ -193,9 +193,9 @@
 														</div>
 													</div>
 												</li>
-												<li class="d-block d-lg-none">
+												<li class="d-none">
 													<a href="#">Home</a>
-													<ul class="dropdown-menu-col-1">
+													<ul class="dropdown-menu-col-1 d-none">
 														<li><a href="index.html"><span>Home -1</span></a></li>
 														<li><a href="index2.html"><span>Home -2</span></a></li>
 														<li><a href="index3.html"><span>Home -3</span></a></li>
@@ -211,15 +211,16 @@
 												</li>
 												<li>
 													<a href="#">Services</a>
-													<ul class="dropdown-menu-col-1">
-														<li><a href="service-layout1.html"><span>Services -01</span></a></li>
-														<li><a href="service-layout2.html"><span>Services -02</span></a></li>
-														<li><a href="service-details.html"><span>Services Details</span></a></li>
+													<ul class="dropdown-menu-col-1 ">
+														<li><a href="mobile.html"><span> Mobile App Developement </span></a></li>
+														<li><a href="website.html"><span>Website Developement </span></a></li>
+														<li><a href="ui.html"><span> UI/UX designing </span></a></li>
+														<li><a href="branding.html"><span>Branding  </span></a></li>
 													</ul>
 												</li>
 												<li>
-													<a href="#">Portfolio</a>
-													<ul class="dropdown-menu-col-1">
+													<a href="about.html">About</a>
+													<ul class="dropdown-menu-col-1 d-none">
 														<li><a href="gallery-grid-2-column.html"><span>Grid 2 Column</span></a></li>
 														<li><a href="gallery-grid-3-column.html"><span>Grid 3 Column</span></a></li>
 														<li><a href="gallery-grid-full-width-3-column.html"><span>Grid Full Width 3 Column</span></a></li>
@@ -233,8 +234,8 @@
 													</ul>
 												</li>
 												<li>
-													<a href="#">Pages</a>
-													<ul class="dropdown-menu-col-1">
+													<a href="#">Team</a>
+													<ul class="dropdown-menu-col-1 d-none">
 														<li><a href="about.html"><span>About Us 1</span></a></li>
 														<li><a href="about2.html"><span>About Us 2</span></a></li>
 														<li><a href="pricing-layout1.html"><span>Our Pricing 1</span></a></li>
@@ -258,31 +259,24 @@
 													</ul>
 												</li>
 												<li>
-													<a href="#">Blog</a>
-													<ul class="dropdown-menu-col-1">
-														<li><a href="blog-grid.html"><span>Blog Grid</span></a></li>
-														<li><a href="blog-list.html"><span>Blog List </span></a></li>
-														<li><a href="blog-masonry.html"><span>Blog Masonry</span></a></li>
-														<li><a href="blog-details.html"><span>Blog Single</span></a></li>
-													</ul>
+													<a href="contact.html">Contact</a>
+													
 												</li>
-												<li>
-													<a href="contact.html"><span>Contact</span></a>
-												</li>
+												
 											</ul>
 										</nav>
 									</div>
-									<div class="col-lg-3 d-flex justify-content-end">
+									<div class="col-lg-3 d-flex justify-content-end d-none">
 										<ul class="header-action-items">
-											<li class="single-item">
+											<li class="single-item d-none">
 												<a href="#template-search" title="Search" class="header-search">
 								<i class="flaticon-search"></i>
 							</a>
 											</li>
-											<li class="single-item mr-2">
+											<li class="single-item mr-2 d-none">
 												<a href="#" class="item-btn btn-fill btn-light">Get a Quote</a>
 											</li>
-											<li class="single-item">
+											<li class="single-item d-none">
 												<button type="button" class="offcanvas-menu-btn menu-status-open">
 			                    <span class="menu-btn-icon">
 			                        <span></span>
@@ -305,7 +299,7 @@
 			<!--=====================================-->
 			<!--=          Main Banner Start        =-->
 			<!--=====================================-->
-			<section class="main-banner-wrap-layout2 has-animation">
+			<section class="main-banner-wrap-layout2 has-animation mb-5">
 				<ul class="animated-figure-wrap1">
 					<li>
 						<div class="translate-top-left-75 opacity-animation transition-200 transition-delay-10">
@@ -411,8 +405,8 @@
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-3500">
 										<div class="banner-btns">
-											<a href="service-layout1.html" class="item-btn btn-fill">Our Services<i class="flaticon-next"></i></a>
-											<a href="#" class="item-btn btn-ghost btn-dark">Get DegeCo</a>
+											<a href="#team" class="item-btn btn-fill">Our Services<i class="flaticon-next"></i></a>
+											<a href="#" class="item-btn btn-ghost btn-dark d-none">Get DegeCo</a>
 										</div>
 									</div>
 								</div>
@@ -420,24 +414,24 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section >
 			<!--=====================================-->
 			<!--=           Main Banner End         =-->
 			<!--=====================================-->
 			<!--=====================================-->
 			<!--=   Service Section Area Start      =-->
 			<!--=====================================-->
-			<section class="service-wrap-layout2 section-padding-md bg-color-light position-relative">
+			<section class="service-wrap-layout2 section-padding-md bg-color-light position-relative" id="team">
 				<div class="animated-figure">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="682px" height="624px" data-parallax='{"x" : 150, "y" : -400}'>
 			<path fill-rule="evenodd"  fill="rgb(249, 251, 255)" d="M129.861,445.151 C135.817,359.733 165.631,309.507 69.925,231.284 C-48.622,134.391 1.806,7.438 100.124,2.487 C180.263,-1.549 184.232,52.109 291.793,81.829 C351.092,98.213 363.911,86.655 391.662,45.581 C442.752,-30.034 518.868,-4.403 507.727,69.983 C496.050,147.952 503.636,232.416 606.763,223.993 C707.036,215.803 714.686,361.609 582.959,374.723 C481.641,384.808 441.418,364.086 368.153,540.352 C316.484,664.660 114.605,663.966 129.861,445.151 Z"/>
 		</svg>
 				</div>
-				<div class="container">
+				<div class="container" >
 					<div class="section-heading heading-dark heading-layout1">
-						<div class="heading-sub-title">FEATURES</div>
+						<div class="heading-sub-title" >FEATURES</div>
 						<h2 class="heading-main-title">Let’s Check Our Services</h2>
-						<p class="heading-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's standard dummy text ever since</p>
+						<p class="heading-paragraph ">Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's standard dummy text ever since</p>
 					</div>
 				</div>
 				<div class="container-fluid">
@@ -782,6 +776,21 @@
 				</div>
 			</section>
 
+			<section id="brand-wrap-layout1" class="brand-wrap-layout1 bg-gradient-layout3">
+				<div class="container">
+					<div class="rc-carousel" data-loop="true" data-items="8" data-margin="30" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="700" data-dots="false" data-nav="false" data-nav-speed="false" data-r-x-small="2" data-r-x-small-nav="false"
+					 data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="false" data-r-x-medium-dots="false" data-r-small="3" data-r-small-nav="false" data-r-small-dots="false" data-r-medium="4" data-r-medium-nav="false" data-r-medium-dots="false" data-r-large="5"
+					 data-r-large-nav="false" data-r-large-dots="false" data-r-extra-large="6" data-r-extra-large-nav="false" data-r-extra-large-dots="false">
+						<div class="brand-box-layout1"><img src="media/brand/brand1.png" alt="Brand-thumb"></div>
+						<div class="brand-box-layout1"><img src="media/brand/brand2.png" alt="Brand-thumb"></div>
+						<div class="brand-box-layout1"><img src="media/brand/brand3.png" alt="Brand-thumb"></div>
+						<div class="brand-box-layout1"><img src="media/brand/brand4.png" alt="Brand-thumb"></div>
+						<div class="brand-box-layout1"><img src="media/brand/brand5.png" alt="Brand-thumb"></div>
+						<div class="brand-box-layout1"><img src="media/brand/brand6.png" alt="Brand-thumb"></div>
+						<div class="brand-box-layout1"><img src="media/brand/brand3.png" alt="Brand-thumb"></div>
+					</div>
+				</div>
+			</section>
 
 			<!--=====================================-->
 			<!--=   Testimonial Section Area End    =-->
@@ -789,7 +798,7 @@
 			<!--=====================================-->
 			<!--=      Team Section Area Start      =-->
 			<!--=====================================-->
-			<section id="team-wrap-layout1" class="section-padding-md">
+			<section id="team-wrap-layout1" class="section-padding-md ">
 				<div class="container">
 					<div class="section-heading heading-dark heading-layout1">
 						<div class="heading-sub-title">OUR BEST</div>
@@ -874,7 +883,7 @@
 			<!--=====================================-->
 			<!--=    Pricing Section Area Start     =-->
 			<!--=====================================-->
-			<section class="pricing-wrap-layout1 section-padding-top-md bg-gradient-layout3 overflow-hidden">
+			<section class="pricing-wrap-layout1 section-padding-top-md bg-gradient-layout3 overflow-hidden d-none">
 				<div class="container">
 					<div class="section-heading heading-dark heading-layout1">
 						<div class="heading-sub-title">PRICING PLAN</div>
@@ -942,21 +951,7 @@
 			<!--=====================================-->
 			<!--=     Brand Section Area Start      =-->
 			<!--=====================================-->
-			<section id="brand-wrap-layout1" class="brand-wrap-layout1 bg-gradient-layout3">
-				<div class="container">
-					<div class="rc-carousel" data-loop="true" data-items="8" data-margin="30" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="700" data-dots="false" data-nav="false" data-nav-speed="false" data-r-x-small="2" data-r-x-small-nav="false"
-					 data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="false" data-r-x-medium-dots="false" data-r-small="3" data-r-small-nav="false" data-r-small-dots="false" data-r-medium="4" data-r-medium-nav="false" data-r-medium-dots="false" data-r-large="5"
-					 data-r-large-nav="false" data-r-large-dots="false" data-r-extra-large="6" data-r-extra-large-nav="false" data-r-extra-large-dots="false">
-						<div class="brand-box-layout1"><img src="media/brand/brand1.png" alt="Brand-thumb"></div>
-						<div class="brand-box-layout1"><img src="media/brand/brand2.png" alt="Brand-thumb"></div>
-						<div class="brand-box-layout1"><img src="media/brand/brand3.png" alt="Brand-thumb"></div>
-						<div class="brand-box-layout1"><img src="media/brand/brand4.png" alt="Brand-thumb"></div>
-						<div class="brand-box-layout1"><img src="media/brand/brand5.png" alt="Brand-thumb"></div>
-						<div class="brand-box-layout1"><img src="media/brand/brand6.png" alt="Brand-thumb"></div>
-						<div class="brand-box-layout1"><img src="media/brand/brand3.png" alt="Brand-thumb"></div>
-					</div>
-				</div>
-			</section>
+			
 			<!--=====================================-->
 			<!--=      Brand Section Area End       =-->
 			<!--=====================================-->
@@ -982,7 +977,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-lg-2 col-md-6 col-12">
+							<div class="col-lg-2 col-md-6 col-12  d-none">
 								<div class="footer-widgets">
 									<h3 class="footer-widget-heading">Workflows</h3>
 									<ul class="footer-menu">
@@ -994,7 +989,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-lg-2 col-md-6 col-12">
+							<div class="col-lg-3 col-md-6 col-12">
 								<div class="footer-widgets">
 									<h3 class="footer-widget-heading">Important Link</h3>
 									<ul class="footer-menu">
@@ -1006,26 +1001,27 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-lg-2 col-md-6 col-12">
+							<div class="col-lg-3 col-md-6 col-12">
 								<div class="footer-widgets">
 									<h3 class="footer-widget-heading">Our Services</h3>
 									<ul class="footer-menu">
-										<li><a href="service-details.html">Web Design</a></li>
-										<li><a href="service-details.html">Development</a></li>
-										<li><a href="service-details.html">Graphic Design</a></li>
-										<li><a href="service-details.html">Branding</a></li>
-										<li><a href="service-details.html">Creative Solution</a></li>
+														<li><a href="mobile.html"><span> Mobile App Developement </span></a></li>
+														<li><a href="website.html"><span>Website Developement </span></a></li>
+														<li><a href="ui.html"><span> UI/UX designing </span></a></li>
+														<li><a href="branding.html"><span>Branding  </span></a></li>
 									</ul>
 								</div>
 							</div>
 							<div class="col-lg-3 col-md-6 col-12">
 								<div class="footer-widgets">
 									<h3 class="footer-widget-heading">Contact Info</h3>
-									<p>Grursus mal suada faci lisis Lorem to ipsum consectetur.</p>
+								
 									<ul class="footer-contact">
-										<li><i class="flaticon-placeholder"></i>113 Sassnex, White House, New Jercy, USA</li>
-										<li><i class="flaticon-plane"></i>info@yourdomain.com</li>
-										<li><i class="flaticon-telephone"></i>+001 548 159 2491</li>
+										<li><i class="flaticon-placeholder"></i> No: 60, Pillaiyar koil street, Arumbakkam, Chennai, India
+</li>
+										<li><i class="flaticon-plane"></i> contact@eternosoft.in</li>
+										<li><i class="flaticon-telephone"></i>Phone : (+91) 8754929903
+</li>
 									</ul>
 								</div>
 							</div>
