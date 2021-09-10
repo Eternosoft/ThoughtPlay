@@ -210,29 +210,7 @@
 
 											</li>
 											<li>
-												<a href="#">Team</a>
-												<ul class="dropdown-menu-col-1 d-none">
-													<li><a href="about.html"><span>About Us 1</span></a></li>
-													<li><a href="about2.html"><span>About Us 2</span></a></li>
-													<li><a href="pricing-layout1.html"><span>Our Pricing 1</span></a></li>
-													<li><a href="pricing-layout2.html"><span>Our Pricing 2</span></a></li>
-													<li><a href="team.html"><span>Team Page</span></a></li>
-													<li><a href="404.html"><span>404 Page</span></a></li>
-													<li><a href="faq.html"><span>FAQ Page</span></a></li>
-													<li><a href="coming-soon.html"><span>Coming Soon</span></a></li>
-													<li class="has-child-second-level"><a href="#"><span>First Level</span></a>
-														<ul class="second-level">
-															<li><a href="index.html"><span>Second Level 1</span></a></li>
-															<li><a href="index.html"><span>Second Level 2</span></a></li>
-															<li class="has-child-third-level"><a href="#"><span>Second Level 3</span></a>
-																<ul class="third-level">
-																	<li><a href="index.html"><span>Third Level 1</span></a></li>
-																	<li><a href="index.html"><span>Third Level 2</span></a></li>
-																</ul>
-															</li>
-														</ul>
-													</li>
-												</ul>
+												<a href="about.html#team">Team</a>
 											</li>
 											<li>
 												<a href="contact.html">Contact</a>
@@ -471,18 +449,30 @@
 						</div>
 					</li>
 				</ul>
+				<script type="text/javascript">
+					function changeToVideo() {
+						$("#initScreen").toggleClass("d-none ");
+						$("#aboutVideo").toggleClass("d-none d-flex");
+						document.getElementById('about_player').play();
+					}
+				</script>
 				<div class="container-fluid">
 					<div class="row d-flex align-items-center">
 						<div class="col-xl-6 col-12 pl-0 pr-0">
 							<div class="about-box-layout8">
 								<div class="figure-holder">
-									<video class="img-fluid" controls>
-									  <source src="assets/about.mp4" type="video/mp4">
-									Your browser does not support the video tag.
-									</video>
-									<a class="play-btn popup-youtube">
-										<div class="item-icon"><i class="fas fa-play"></i></div>
-									</a>
+									<div class="d-none flex-row justify-content-center align-items-center w-100 h-100 border" id="aboutVideo">
+										<video class="img-fluid" id="about_player" preload="auto" loop>
+										  <source src="assets/about.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+										</video>
+									</div>
+									<div class="w-100 h-100 border" id="initScreen">
+										<img src="assets/abouts/abouts.png" alt="">
+										<a class="play-btn popup-youtube">
+											<div class="item-icon" onclick="changeToVideo()"><i class="fas fa-play"></i></div>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -492,7 +482,7 @@
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1000">
 										<h2 class="item-title">We Work With 20 Years Of Experience</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1300">
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1300 d-none">
 										<p>Grursus mal suada faci lisis Lorem ipsum dolarorit more a ametion that consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.</p>
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
@@ -519,6 +509,7 @@
 			<!--=====================================-->
 			<!--=      Team Section Area Start      =-->
 			<!--=====================================-->
+			<div id="team"></div>
 			<section id="team-wrap-layout1" class="section-padding-md">
 				<div class="container">
 					<div class="section-heading heading-dark heading-layout1">
