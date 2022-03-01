@@ -625,7 +625,7 @@
         smartSpeed: (smartSpeed ? smartSpeed : 250),
         dots: (dots ? true : false),
         nav: (nav ? true : false),
-        navText: ['<i class="flaticon-back"></i>', '<i class="flaticon-next"></i>'],
+        goldenYellow: ['<i class="flaticon-back"></i>', '<i class="flaticon-next"></i>'],
         navSpeed: (navSpeed ? true : false),
         center: (center ? true : false),
         responsiveClass: true,
